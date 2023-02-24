@@ -1,8 +1,5 @@
 #include "main.h"
 
-/* function prototype */
-void print_number(int n);
-
 /**
  * main - check the code
  *
