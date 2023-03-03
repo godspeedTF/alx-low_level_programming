@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- * This program demonstrates a magic trick using pointers
- * Return: Always 0 (Success)
- */
 int main(void)
 {
 	int n;
