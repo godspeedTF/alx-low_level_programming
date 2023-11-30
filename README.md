@@ -8,7 +8,7 @@
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/216/IMG_2410.JPG)
 
 
-### A compact compilation of my C experience
+## Description
 
 This repository contains all my **alx low level programming projects**. Every project has a directory and each directory contains a `README.md` file which provides detailed decription of the project and the tasks within the project.
 
