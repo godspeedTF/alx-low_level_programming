@@ -1,173 +1,58 @@
-# 0x13. C - More singly linked lists
 
-## More Info
+![img](https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png)
 
-Please use this data structure for this project:
+# ALX Low Level Programming in C
 
-```c
-/**
- * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- * 
- */
-typedef struct listint_s
-{
-    int n;
-    struct listint_s *next;
-} listint_t;
-```
+>C, debugging, pointers, functions, malloc, recursion, argc-argv
 
-## Tasks
+### A compact compilation of my C experience
 
-### 0. Print list
+This repository contains all my **alx low level programming projects**. Every project has a directory and each directory contains a `README.md` file which provides detailed decription of the project and the tasks within the project.
 
-Write a function that prints all the elements of a `listint_t` list.
+## Projects
 
-- Prototype: `size_t print_listint(const listint_t *h);`
-- Return: the number of nodes
-- Format: see example
-- You are allowed to use `printf`
+### Hatching out
 
-[solution](0-print_listint.c)
+- **0x00**. Hello, World [**↗**](0x00-hello_world)
 
-### 1. List length
+- **0x01**. Variables, if, else, while [**↗**](0x01-variables_if_else_while)
 
-Write a function that returns the number of elements in a linked `listint_t` list.
+- **0x02**. Function, nested loop [**↗**](0x02-functions_nested_loops)
 
-- Prototype: `size_t listint_len(const listint_t *h);`
+- **0x03**. Debugging [**↗**](0x03-debugging)
 
-[solution](1-listint_len.c)
+- **0x04**. More functions, more nested loops [**↗**](0x04-more_functions_nested_loops)
 
-### 2. Add node
+- **0x05**. Pointers, arrays and strings [**↗**](0x05-pointers_arrays_strings)
 
-Write a function that adds a new node at the beginning of a `listint_t` list.
+- **0x06**. More pointers, arrays and strings [**↗**](0x06-pointers_arrays_strings)
 
-- Prototype: `listint_t *add_nodeint(listint_t **head, const int n);`
-- Return: the address of the new element, or `NULL` if it failed
+- **0x07**. Even more pointers, arrays and strings [**↗**](0x07-pointers_arrays_strings) 
 
-[solution](2-add_nodeint.c)
+- **0x08**. Recursion [**↗**](0x08-recursion)
 
-### 3. Add node at the end
+- **0x09**. Static libraries [**↗**](0x09-static_libraries)
 
-Write a function that adds a new node at the end of a `listint_t` list.
+- **0x0A**. argc, argv [**↗**](0x0A-argc_argv)
 
-- Prototype: `listint_t *add_nodeint_end(listint_t **head, const int n);`
-- Return: the address of the new element, or `NULL` if it failed
+- **0x0B**. malloc, free [**↗**](0x0B-malloc_free)
 
-[solution](3-add_nodeint_end.c)
+- **0x0C**. More malloc, free [**↗**](0x0C-more_malloc_free)
 
-### 4. Free list
+- **0x0D**. Preprocessor [**↗**](0x0D-preprocessor)
 
-Write a function that frees a `listint_t` list.
+- **0x0E**. Structures, typedef [**↗**](0x0E-structures_typedef)
 
-- Prototype: `void free_listint(listint_t *head);`
+- **0x0F**. Function pointers [**↗**](0x0F-function_pointers)
 
-[solution](4-free_listint.c)
+- **0x10**. Variadic functions [**↗**](0x10-variadic_functions)
 
-### 5. Free
+- **0x11**. printf [**↗**](https://github.com/mcsavvy/printf)
 
-Write a function that frees a `listint_t` list.
+- **0x14**. Bit manipulation [**↗**](0x14-bit_manipulation)
 
-- Prototype: `void free_listint2(listint_t **head);`
-- The function sets the `head` to `NULL`
+### Data structures and Algorithms
 
-[solution](5-free_listint2.c)
+- **0x12**. Singly linked lists [**↗**](0x12-singly_linked_lists)
 
-### 6. Pop
-
-Write a function that deletes the head node of a `listint_t` linked list, and returns the head node’s data (n).
-
-- Prototype: `int pop_listint(listint_t **head);`
-- if the linked list is empty return `0`
-
-[solution](6-pop_listint.c)
-
-### 7. Get node at index
-
-Write a function that returns the nth node of a `listint_t` linked list.
-
-- Prototype: `listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);`
-- where `index` is the index of the node, starting at `0`
-- if the node does not exist, return `NULL`
-
-[solution](7-get_nodeint.c)
-
-### 8. Sum list
-
-Write a function that returns the sum of all the data (n) of a `listint_t` linked list.
-
-- Prototype: `int sum_listint(listint_t *head);`
-- if the list is empty, return `0`
-
-[solution](8-sum_listint.c)
-
-### 9. Insert
-
-Write a function that inserts a new node at a given position.
-
-- Prototype: `listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);`
-- where `idx` is the index of the list where the new node should be added. Index starts at `0`
-- Returns: the address of the new node, or `NULL` if it failed
-- if it is not possible to add the new node at index `idx`, do not add the new node and return `NULL`
-
-[solution](9-insert_nodeint.c)
-
-### 10. Delete at index
-
-Write a function that deletes the node at index `index` of a `listint_t` linked list.
-
-- Prototype: `int delete_nodeint_at_index(listint_t **head, unsigned int index);`
-- where `index` is the index of the node that should be deleted. Index starts at `0`
-- Returns: `1` if it succeeded, `-1` if it failed
-
-[solution](10-delete_nodeint.c)
-
-### 11. Reverse list
-
-Write a function that reverses a `listint_t` linked list.
-
-- Prototype: `listint_t *reverse_listint(listint_t **head);`
-- Returns: a pointer to the first node of the reversed list
-- You are not allowed to use more than `1` loop.
-- You are not allowed to use `malloc`, `free` or arrays
-- You can only declare a maximum of two variables in your function
-
-[solution](100-reverse_listint.c)
-
-### 12. Print (safe version)
-
-Write a function that prints a `listint_t` linked list.
-
-- Prototype: `size_t print_listint_safe(const listint_t *head);`
-- Returns: the number of nodes in the list
-- This function can print lists with a loop
-- You should go through the list only once
-- If the function fails, exit the program with status `98`
-
-[solution](101-print_listint_safe.c)
-
-### 13. Free (safe version)
-
-Write a function that frees a `listint_t` list.
-
-- Prototype: `size_t free_listint_safe(listint_t **h);`
-- This function can free lists with a loop
-- You should go though the list only once
-- Returns: the size of the list that was free’d
-- The function sets the `head` to `NULL`
-
-[solution](102-free_listint_safe.c)
-
-### 14. Find the loop
-
-Write a function that finds the loop in a linked list.
-
-- Prototype: `listint_t *find_listint_loop(listint_t *head);`
-- Returns: The address of the node where the loop starts, or `NULL` if there is no loop
-- You are not allowed to use `malloc`, `free` or arrays
-- You can only declare a maximum of two variables in your function
-
-[solution](103-find_loop.c)
+- **0x13**. More singly linked lists [**↗**](0x13-more_singly_linked_lists)
