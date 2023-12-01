@@ -5,8 +5,9 @@
 
 >C, debugging, pointers, functions, malloc, recursion, argc-argv
 
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/216/IMG_2410.JPG)
-
+<p align="center">
+  <img src="https://i.postimg.cc/rprHShJ1/C-compilation-process.gif" />
+</p>
 
 ## Description
 
